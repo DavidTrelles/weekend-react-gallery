@@ -4,11 +4,11 @@ function GalleryList({galleryListProp}){
     return(
     <>
     <p>All Images</p>
-    <ul>
+    <div>
         {galleryListProp.map(image =>
             (<GalleryItem key={image.id} image={image}/>)
             )}
-    </ul>
+    </div>
     </>
     )
 }
