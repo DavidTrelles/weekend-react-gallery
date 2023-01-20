@@ -1,7 +1,7 @@
 function GalleryItem({image}){
     return(
         <>
-        <li ><img src={image.path} style={{width: 200 + "px", height: 200 + "px"}}></img></li>
+        <li ><img src={image.path} style={{width: 100 + "px", height: 100 + "px"}}></img></li>
         </>
 
 
