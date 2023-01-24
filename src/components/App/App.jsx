@@ -26,12 +26,26 @@ function App() {
     fetchGallery();
   }, [])
 
+  const addlikeFunc = (id) => {
+    console.log(id)
+    axios({
+      method: "PUT",
+      url: `/gallery/like/${id}`
+    }).then(function () {
+      fetchGallery();
+    })
+    .catch(function (error) {
+      console.log("error with putting,", error);
+    });
+
+
+  }
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <GalleryList galleryListProp={galleryList} />
+        <GalleryList galleryListProp={galleryList} addLikesFunc= {addlikeFunc} />
       </div>
     );
 }

@@ -1,7 +1,16 @@
-img {
+.item {
+  background-color: dimgray;
   border: 1px solid gray;
   display: inline-block;
   width: 250px;
-  height: 200px;
+  height: 250px;
   margin: 6px;
+}
+
+.tile {
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  margin: 6px;
+  background-color: white;
 }

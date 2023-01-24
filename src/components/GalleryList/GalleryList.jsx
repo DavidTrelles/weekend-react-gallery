@@ -1,12 +1,11 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 import './GalleryList.css'
-function GalleryList({galleryListProp}){
+function GalleryList({galleryListProp, addLikesFunc}){
     return(
     <>
-    <p>All Images</p>
     <div>
         {galleryListProp.map(image =>
-            (<GalleryItem key={image.id} image={image}/>)
+            (<GalleryItem key={image.id} image={image} addLikesFunc={addLikesFunc}/>)
             )}
     </div>
     </>
